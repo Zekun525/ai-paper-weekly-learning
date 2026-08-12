@@ -18,18 +18,35 @@
 
 ## 四周路线
 
-- 第 1 周：终端、Git、GitHub、分支、Pull Request 和冲突。
-- 第 2 周：Python 环境、HTTP/API、论文采集和自动测试。
-- 第 3 周：大模型、RAG、Mock、摘要生成和静态网页。
-- 第 4 周：GitHub Actions、Secrets、GitHub Pages 和求职表达。
+- 第 1 周（6 课）：终端、Git、GitHub、分支、Pull Request 和冲突。
+- 第 2 周（4 课）：Python、离线纵向切片、arXiv API、稳定快照和测试。
+- 第 3 周（4 课）：可替换模型、RAG 引用、研究型 Agent 状态机和评测。
+- 第 4 周（4 课）：CI、Secrets、定时任务、GitHub Pages 和项目验收。
+
+查看 [完整路线与产物地图](roadmap.md)，了解高星项目的哪些设计被融入了哪一课。
 
 ## 当前任务
 
 从 [第 1 课](week-1/lesson-01.md) 开始。完成任务后，把终端输出发给老师验收，不要提前执行后续课程。
+
+第一次使用请先读 [使用手册](HOW-TO-USE.md)。它说明每次如何开始、如何求助、如何验收，以及什么时候才算真正完成。
+
+## 参考项目库
+
+- [AI Agent 高星项目导读](resources/ai-agent-projects.md)：按本课程阶段筛选的开源项目、阅读重点和使用边界。
+- [开源项目学习卡](resources/project-study-template.md)：阅读项目时记录预测、调用链、设计取舍和自己的实现。
+
+参考项目的合适部分已经融入具体课程任务；你不需要同时学习多个大型仓库，也不要直接复制其源码。课程会在需要时告诉你借鉴什么、自己实现什么以及如何验收。
+
+## 课程目录
+
+- 第 1 周：[第 1 课](week-1/lesson-01.md) → [第 2 课](week-1/lesson-02.md) → [第 3 课](week-1/lesson-03.md) → [第 4 课](week-1/lesson-04.md) → [第 5 课](week-1/lesson-05.md) → [第 6 课](week-1/lesson-06.md)
+- 第 2 周：[第 7 课](week-2/lesson-01.md) → [第 8 课](week-2/lesson-02.md) → [第 9 课](week-2/lesson-03.md) → [第 10 课](week-2/lesson-04.md)
+- 第 3 周：[第 11 课](week-3/lesson-01.md) → [第 12 课](week-3/lesson-02.md) → [第 13 课](week-3/lesson-03.md) → [第 14 课](week-3/lesson-04.md)
+- 第 4 周：[第 15 课](week-4/lesson-01.md) → [第 16 课](week-4/lesson-02.md) → [第 17 课](week-4/lesson-03.md) → [第 18 课](week-4/lesson-04.md)
 
 ## 学习记录
 
 - [概念词典](glossary.md)：用自己的语言记录新术语。
 - [错误手册](error-log.md)：记录错误现象、猜测、验证与结论。
 - [进度表](progress.md)：只有通过验收后才勾选。
-

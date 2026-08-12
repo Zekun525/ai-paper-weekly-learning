@@ -6,7 +6,7 @@
 
 - 解释终端、当前目录和路径是什么。
 - 解释 Git 与 GitHub 的区别。
-- 把普通目录初始化为 Git 仓库。
+- 在临时练习目录中把普通目录初始化为 Git 仓库。
 - 使用 `git status` 判断仓库当前状态。
 
 ## 一、基本概念
@@ -44,25 +44,28 @@
 
 先不要执行命令，在纸上或聊天中回答：
 
-1. 当前目录还没有 `.git`，运行 `git status` 会成功还是失败？
+1. 一个普通目录还没有 `.git`，运行 `git status` 会成功还是失败？
 2. 执行 `git init` 后，课程文件会自动成为一次提交吗？
 3. 执行 `git init` 会把文件上传到 GitHub 吗？
 
 ## 三、实践任务
 
-确认 VS Code 终端位于 `D:\ailearning`，逐条执行：
+`D:\ailearning` 已经是课程仓库，不能再次用它观察初始化前的状态。本课在系统临时目录创建一个可随时重做的实验目录。逐条执行：
 
 ```powershell
 Get-Location
 Get-ChildItem
 git --version
+New-Item -ItemType Directory -Force "$env:TEMP\ailearning-git-init-lab"
+Set-Location "$env:TEMP\ailearning-git-init-lab"
 git status
 git init
 git status
 Get-ChildItem -Force
+Set-Location D:\ailearning
 ```
 
-不要把所有命令一次粘贴执行。每执行一条，先看输出，再继续。
+不要把所有命令一次粘贴执行。每执行一条，先看输出，再继续。最后一定回到 `D:\ailearning`，并用 `Get-Location` 确认。
 
 ## 四、观察重点
 
@@ -75,17 +78,16 @@ Get-ChildItem -Force
 
 不查看上面的命令，完成以下操作：
 
-1. 证明自己位于 `D:\ailearning`。
+1. 证明自己位于临时实验目录。
 2. 证明该目录现在是 Git 仓库。
 3. 找到 Git 创建的隐藏目录。
-4. 判断当前有哪些文件还没有被 Git 跟踪。
+4. 返回 `D:\ailearning`，证明课程仓库没有被实验破坏。
 
 ## 六、提交给老师验收
 
 请回复以下两部分：
 
 1. 三道“运行前预测”的答案。
-2. 初始化后的 `git status` 输出。
+2. 临时实验目录初始化前、初始化后的两次 `git status` 输出。
 
 最后用一句自己的话解释：**`git init` 到底做了什么？**
-
