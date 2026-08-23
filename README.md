@@ -36,6 +36,22 @@
 
 - 学会用 Git 和 GitHub 管理真实项目，并使用RAG技术搭建一个 AI 论文周报工具。
 
+## 快速开始
+
+1. 创建虚拟环境并激活。
+2. 安装项目到开发模式。
+3. 运行样例周报。
+4. 运行测试。
+
+```powershell
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e .
+python -m pip install pytest
+paper-weekly
+python -m pytest -q
+
 ## 开源项目学习原则
 
 - 先理解问题和架构，再运行代码。
