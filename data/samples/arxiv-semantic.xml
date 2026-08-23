@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Rrkhg7crU3cHZH69Etlz8gDZXyw</id>
+  <title>arXiv Query: search_query=all:"semantic communication"&amp;id_list=&amp;start=0&amp;max_results=3</title>
+  <updated>2026-08-19T03:16:12Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22semantic+communication%22&amp;start=0&amp;max_results=3&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <opensearch:totalResults>1081</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.16100v1</id>
+    <title>TISC: A Text-Driven Image Semantic Communication System for Faithful Reconstruction</title>
+    <updated>2026-08-17T04:45:02Z</updated>
+    <link href="https://arxiv.org/abs/2608.16100v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.16100v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative image semantic communication converts an image into a text description and then performs text-to-image reconstruction at the receiver via diffusion-based generative models. This paradigm has attracted broad attention due to its extremely low bandwidth cost. However, existing methods still face two critical bottlenecks across image-to-text (I2T) semantic extraction at the transmitter and text-to-image (T2I) semantic reconstruction at the receiver: (i) semantic loss and distortion in I2T, where holistic image descriptions may omit fine-grained object attributes and spatial-position information, causing the generated text to deviate from the original image semantics; and (ii) insufficient semantic faithfulness in T2I, where even with the same semantically faithful text description, different initial noise settings may lead diffusion-based reconstruction to produce images with different levels of semantic consistency with the original image. These issues jointly limit the semantic faithfulness of image reconstruction. To address them, we propose TISC, a text-driven image semantic communication framework tailored for faithful reconstruction. TISC incorporates two key designs: (1) Tree-Structured Attribute Semantic Extraction (TSASE), which decomposes semantic extraction into global scene, background, and object-level attribute descriptions, covering spatial position, shape/pose, color, material, and other physical attributes for each detected object; and (2) an Initial Noise Optimization (INO) mechanism, which selects an initial noise seed at the transmitter according to a comprehensive similarity score that jointly considers visual and semantic consistency. Experiments on multiple datasets show that TSASE improves object-position recovery and semantic description faithfulness, while the INO parameter study supports the adopted configuration for noise selection.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-17T04:45:02Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Feifan Zhang</name>
+    </author>
+    <author>
+      <name>Yuyang Du</name>
+    </author>
+    <author>
+      <name>Xiaoyan Liu</name>
+    </author>
+    <author>
+      <name>Soung Chang Liew</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.15256v1</id>
+    <title>Decentralized Federated Learning for Heterogeneous Multi-Task Semantic Communication</title>
+    <updated>2026-08-15T14:22:58Z</updated>
+    <link href="https://arxiv.org/abs/2608.15256v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.15256v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Collaborative training in distributed semantic communication (DSC) networks typically relies on decentralized federated learning (DFL). However, pushing topology-agnostic aggregation into heterogeneous, multi-task environments creates a fundamental bottleneck: it drives negative transfer and overconsensus bias (OCB). This paper introduces a personalized DSC framework that cuts off this cross-task interference. At the node level, a policy-driven multi-path routing mechanism separates task-specific features from shared representations to preserve local fidelity. Across the network, we deploy a "communicationwhile- aggregation" protocol. It calibrates a column-stochastic consensus matrix using task affinities. This limits the system to absorbing complementary knowledge while actively blocking mismatched parameter updates. To bound the convergence, we derive a unified Lyapunov drift analysis. We reveal a strict Ushaped trade-off: deeper topological mixing reduces variance but amplifies structural OCB. Resolving this tension yields a closed-form expression for the optimal aggregation depth. We evaluate the proposed framework on NYU-v2, where the results reveal a clear trade-off between insufficient aggregation and excessive topological mixing. At the analytically derived optimal aggregation depth, our method achieves a 4.77% global relative improvement over the no-aggregation baseline and outperforms decentralized FedAvg, FedAMP, and heuristic max aggregation. We further evaluate the framework on Taskonomy and imperfect wireless links to examine the effects of network-size variation and wireless-link reliability.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-15T14:22:58Z</published>
+    <arxiv:comment>17 pages, 9 figures, Accepted by IEEE Transactions on Communications</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Lin Yin</name>
+    </author>
+    <author>
+      <name>Tiejun Lv</name>
+    </author>
+    <author>
+      <name>Weicai Li</name>
+    </author>
+    <author>
+      <name>Xi Yu</name>
+    </author>
+    <author>
+      <name>Xiaoyu He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.14280v1</id>
+    <title>LLM-Assisted LDPC Decoding via Syndrome-Verified Semantic Priors</title>
+    <updated>2026-08-14T13:06:41Z</updated>
+    <link href="https://arxiv.org/abs/2608.14280v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.14280v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Semantic communication exploits the meaning of the payload, which bit-level processing discards. When channel decoding fails on a natural language payload, the errors appear as corrupted characters in the recovered text. A large language model (LLM) infers the intended characters from the semantic context, but it can also produce incorrect corrections. Applying them directly introduces new bit errors when the LLM modifies characters incorrectly. In this paper, we propose an LLM-assisted decoding framework for low-density parity-check (LDPC) codes. Rather than trusting LLM predictions, the decoder evaluates the modified characters jointly against the parity-check constraints and admits only the accepted corrections as verified semantic priors. These priors are injected as soft updates to the channel log-likelihood ratios, preserving the original channel evidence without modifying the decoder. A subsequent belief propagation pass distributes the injected evidence across the check nodes, recovering not only the injected bits but also the residual errors that the LLM fails to correct. Simulations demonstrate a 73% bit error rate reduction over a conventional decoder at 2.0 dB, whereas doubling its iterations to the same budget yields only 21%. The verification maintains an injection precision above 0.88 despite inaccurate LLM predictions, demonstrating that semantic knowledge can be reliably translated into physical-layer reliability gains.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-14T13:06:41Z</published>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Sojeong Park</name>
+    </author>
+    <author>
+      <name>Hyeonsu Lyu</name>
+    </author>
+    <author>
+      <name>Jaehyun Choi</name>
+    </author>
+    <author>
+      <name>Hyun Jong Yang</name>
+    </author>
+  </entry>
+</feed>
